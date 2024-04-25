@@ -1,0 +1,28 @@
+.caja {
+
+    background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #FFFFFF;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 4rem;
+}
+
+.texto{
+
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.redes-icon{
+
+    height: 3px;
+    width: 3px;
+}
+
+.icono-i{
+
+    font-size: 20px;
+    
+
+}
