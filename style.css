@@ -1,11 +1,19 @@
-.caja {
-
+.content-all{
     background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja {
     color: #FFFFFF;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1100px;
 }
 
 .texto{
@@ -16,7 +24,15 @@
 
 .redes-icon{
 
-    height: 3px;
-    width: 3px;
+    height: 16px;
+    width: 16px;
 }
 
+.secc1, .secc2 {
+    flex: 1;
+}
+.redes-padre {
+    max-width: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
