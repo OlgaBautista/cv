@@ -22,6 +22,10 @@
     font-size: 20px;
 }
 
+ul.menu {
+    padding-top: 4rem;
+}
+
 .redes-icon{
 
     height: 16px;
@@ -35,4 +39,21 @@
     max-width: 5rem;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 4rem;
+}
+
+.content1 {
+    display: flex;
+    width: auto;
+}
+
+ul.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul.grup-class {
+    margin: 0;
+    padding: 0;
 }
