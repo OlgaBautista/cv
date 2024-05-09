@@ -1,4 +1,10 @@
-.content-all{
+body {
+
+    margin: 0;
+
+}
+
+.content-all {
     background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
     display: flex;
     align-items: center;
@@ -22,7 +28,7 @@
     font-size: 20px;
 }
 
-ul.menu {
+ul.menu, .secc-exp {
     padding-top: 4rem;
 }
 
@@ -35,7 +41,7 @@ ul.menu {
 .secc1, .secc2 {
     flex: 1;
 }
-.redes-padre {
+.redes-padres {
     max-width: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -57,3 +63,20 @@ ul.grup-class {
     margin: 0;
     padding: 0;
 }
+
+.m-6, .enlace{
+
+    list-style: none;
+
+}
+
+p.titulo1{
+
+    flex: 1;
+    list-style: none;
+}
+
+.cont-primer {
+    flex: 4.5;
+}
+
