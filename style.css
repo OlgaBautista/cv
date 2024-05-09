@@ -1,6 +1,7 @@
-body {
+body, .grup-class {
 
     margin: 0;
+    padding: 0;
 
 }
 
@@ -9,17 +10,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.caja {
     color: #FFFFFF;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 4rem;
+    padding: 4rem 10rem;
+    
+}
+.caja, .content1 {
+
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    max-width: 1100px;
+    width: auto;
+    
 }
 
 .texto{
@@ -29,6 +31,7 @@ body {
 }
 
 ul.menu, .secc-exp {
+
     padding-top: 4rem;
 }
 
@@ -40,17 +43,15 @@ ul.menu, .secc-exp {
 
 .secc1, .secc2 {
     flex: 1;
-}
-.redes-padres {
-    max-width: 5rem;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 4rem;
+    padding: 1rem 3rem;
+    
 }
 
-.content1 {
+.redes-padre {
+    max-width: 111px;
     display: flex;
-    width: auto;
+    justify-content: space-evenly;
+    padding-top: 5rem;
 }
 
 ul.skills {
@@ -59,15 +60,20 @@ ul.skills {
     justify-content: space-around;
 }
 
-ul.grup-class {
-    margin: 0;
-    padding: 0;
-}
-
 .m-6, .enlace{
 
     list-style: none;
 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a.li-in{
+
+    color: palevioletred;
 }
 
 p.titulo1{
@@ -77,6 +83,9 @@ p.titulo1{
 }
 
 .cont-primer {
-    flex: 4.5;
+    flex: 3.7;
+    font-size: 13px;
 }
+
+
 
