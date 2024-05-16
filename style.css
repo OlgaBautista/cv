@@ -57,7 +57,7 @@ ul.menu, .secc-exp {
 ul.skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    padding: 0;
 }
 
 .m-6, .enlace{
@@ -105,3 +105,4 @@ li.ski-1 {
     overflow-x: hidden;
     height: 78vh;
 }
+
