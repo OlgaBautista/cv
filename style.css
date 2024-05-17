@@ -66,6 +66,10 @@ ul.skills {
 
 }
 
+.m-6{
+    padding-top: 18px;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -97,6 +101,9 @@ li.ski-1 {
 
 .secc1 {
     height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -104,5 +111,20 @@ li.ski-1 {
     overflow: scroll;
     overflow-x: hidden;
     height: 78vh;
+    scrollbar-width: none;
+}
+
+.content1:hover {
+    background-color: rgb(240, 210, 115, 0.3);
+    padding: 19PX;
+    border-radius: 47px;
+}
+
+.content1{
+    padding: 19PX;
+}
+
+h3.emp-1:hover {
+    color: aqua;
 }
 
