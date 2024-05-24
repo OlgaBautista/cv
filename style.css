@@ -1,3 +1,8 @@
+body{
+
+    background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
 body, .grup-class {
 
     margin: 0;
@@ -5,19 +10,26 @@ body, .grup-class {
 
 }
 
+
 .content-all {
-    background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+
     color: #FFFFFF;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 4rem 10rem;
+    padding: 0rem 12rem;
     
 }
-.caja, .content1 {
+
+.caja{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 11rem;
+}
+
+.content1 {
 
     display: flex;
     width: auto;
@@ -41,12 +53,6 @@ ul.menu, .secc-exp {
     width: 16px;
 }
 
-.secc1, .secc2 {
-    flex: 1;
-    padding: 1rem 3rem;
-    
-}
-
 .redes-padre {
     max-width: 111px;
     display: flex;
@@ -57,7 +63,9 @@ ul.menu, .secc-exp {
 ul.skills {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0px;
+    width: 76%;
+    justify-content: space-around;
 }
 
 .m-6, .enlace{
@@ -100,18 +108,54 @@ li.ski-1 {
 }
 
 .secc1 {
-    height: 78vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    display: grid;
+    position: fixed; /*hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll*/
+    max-width: 37rem;
+    padding: 5rem 0rem;
+    
 }
 
 
 .secc2 {
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 78vh;
-    scrollbar-width: none;
+    padding: 5rem 0rem;
+    margin-left: 38rem;
+}
+
+@media (max-width:1600px) { 
+
+    .caja {
+        display: grid;
+        padding: 0rem 11rem;
+    }
+
+    .secc1 {
+        
+        position: sticky; /* se suele utilizar cuando queremos que un elemento se posicione en un lugar específico de forma fija*/
+        max-width: 37rem;
+        padding-top: 5rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 5rem 0rem; 
+    }
+
+    
+}
+
+@media (max-width:801px){
+
+    .content-all{
+
+        padding: 0rem;
+    }
+    
+    .caja {
+        display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
+        justify-content: center;
+    }
+
 }
 
 .content1:hover {
@@ -127,4 +171,3 @@ li.ski-1 {
 h3.emp-1:hover {
     color: aqua;
 }
-
