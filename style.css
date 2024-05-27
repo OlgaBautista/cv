@@ -122,7 +122,7 @@ li.ski-1 {
     margin-left: 38rem;
 }
 
-@media (max-width:1600px) { 
+@media (max-width:1600px) { /*trta de quitar este media query*/
 
     .caja {
         display: grid;
@@ -144,7 +144,7 @@ li.ski-1 {
     
 }
 
-@media (max-width:801px){
+@media (max-width:780px){
 
     .content-all{
 
@@ -154,6 +154,10 @@ li.ski-1 {
     .caja {
         display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
         justify-content: center;
+    }
+
+    .enlace {
+        display: none;
     }
 
 }
