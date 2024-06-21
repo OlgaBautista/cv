@@ -122,18 +122,30 @@ li.ski-1 {
     margin-left: 38rem;
 }
 
-@media (max-width:1600px) { /*trta de quitar este media query*/
 
+@media (max-width:780px){
+
+    .content-all {
+
+        padding: 0px;
+    }
+    
     .caja {
-        display: grid;
+        display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
+        justify-content: center;
         padding: 0rem 11rem;
+
+    }
+
+    .enlace {
+        display: none;
     }
 
     .secc1 {
-        
-        position: sticky; /* se suele utilizar cuando queremos que un elemento se posicione en un lugar específico de forma fija*/
-        max-width: 37rem;
-        padding-top: 5rem;
+    
+            position: sticky;
+            max-width: 19rem;
+            padding-top: 1rem;
     }
 
     .secc2 {
@@ -141,23 +153,28 @@ li.ski-1 {
         margin: 5rem 0rem; 
     }
 
-    
-}
+    .c-1 {
+        height: 18rem;
+    }
 
-@media (max-width:780px){
+    .c-2 {
+        height: 0rem;
+    }
 
-    .content-all{
-
+    .content1 {
         padding: 0rem;
-    }
-    
-    .caja {
-        display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
-        justify-content: center;
+        display: grid;
+
     }
 
-    .enlace {
-        display: none;
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .m-6 {
+        /* padding-top: 18px; */
+        width: 20rem;
     }
 
 }
@@ -175,3 +192,4 @@ li.ski-1 {
 h3.emp-1:hover {
     color: aqua;
 }
+
