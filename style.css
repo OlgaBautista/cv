@@ -62,10 +62,7 @@ ul.menu, .secc-exp {
 
 ul.skills {
     display: flex;
-    flex-direction: row;
     padding: 0px;
-    width: 76%;
-    justify-content: space-around;
 }
 
 .m-6, .enlace{
@@ -102,9 +99,10 @@ p.titulo1{
 li.ski-1 {
     color: aqua;
     list-style: none;
-    background-color: rgb(138,43,226, 0.5);
+    background-color: rgb(138, 43, 226, 0.5);
     padding: 5px 16px;
     border-radius: 46px;
+    margin-left: 41px;
 }
 
 .secc1 {
@@ -177,6 +175,26 @@ li.ski-1 {
         width: 20rem;
     }
 
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
 }
 
 .content1:hover {
@@ -192,4 +210,9 @@ li.ski-1 {
 h3.emp-1:hover {
     color: aqua;
 }
+
+img.cap {
+    width: 5rem;
+}
+
 
