@@ -12,21 +12,19 @@ body, .grup-class {
 
 
 .content-all {
-    
-
     color: #FFFFFF;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 0rem 12rem;
-    
+    display: flex;
+    justify-content: center;
 }
 
-.caja{
-
+.caja {
     display: flex;
     justify-content: space-between;
-    padding: 0rem 11rem;
+    width: 1200px;
+    padding: 6rem 0rem;
 }
 
 .content1 {
@@ -40,7 +38,9 @@ body, .grup-class {
 
     opacity: 0.5;
     font-size: 20px;
+    width: 23rem;
 }
+
 
 ul.menu, .secc-exp {
 
@@ -102,7 +102,7 @@ li.ski-1 {
     background-color: rgb(138, 43, 226, 0.5);
     padding: 5px 16px;
     border-radius: 46px;
-    margin-left: 41px;
+    margin-left: 6px;
 }
 
 .secc1 {
@@ -110,13 +110,11 @@ li.ski-1 {
     display: grid;
     position: fixed; /*hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll*/
     max-width: 37rem;
-    padding: 5rem 0rem;
     
 }
 
 
 .secc2 {
-    padding: 5rem 0rem;
     margin-left: 38rem;
 }
 
@@ -148,7 +146,7 @@ li.ski-1 {
 
     .secc2 {
         padding: 0rem 0rem; 
-        margin: 5rem 0rem; 
+        margin: 9rem 0rem; 
     }
 
     .c-1 {
@@ -215,4 +213,22 @@ img.cap {
     width: 5rem;
 }
 
+.all {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.i-content {
+    flex: 2;
+    margin-left: 22px;
+}
+
+.inv-pro {
+    flex: 1;
+}
+
+img.cap {
+    width: 227px;
+    border-radius: 14px
+}
 
