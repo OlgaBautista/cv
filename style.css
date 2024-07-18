@@ -129,7 +129,7 @@ li.ski-1 {
     .caja {
         display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
         justify-content: center;
-        padding: 0rem 11rem;
+        margin: 16px;
 
     }
 
@@ -168,11 +168,6 @@ li.ski-1 {
         font-size: 18px;
     }
 
-    .m-6 {
-        /* padding-top: 18px; */
-        width: 20rem;
-    }
-
     .list {
         display: flex;
         flex-wrap: wrap;
@@ -192,6 +187,11 @@ li.ski-1 {
         border-radius: 46px;
         margin: 3px;
     }
+
+    .all-proy {
+        display: flow;
+    }
+
 
 }
 
@@ -213,7 +213,7 @@ img.cap {
     width: 5rem;
 }
 
-.all {
+.all-proy {
     display: flex;
     flex-direction: row-reverse;
 }
