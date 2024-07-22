@@ -121,16 +121,18 @@ li.ski-1 {
 
 @media (max-width:780px){
 
-    .content-all {
+   /* .content-all {
 
         padding: 0px;
-    }
+    }*/
     
     .caja {
-        display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal*/
+        display: flex;
         justify-content: center;
-        margin: 16px;
-
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
     }
 
     .enlace {
@@ -138,10 +140,9 @@ li.ski-1 {
     }
 
     .secc1 {
-    
-            position: sticky;
-            max-width: 19rem;
-            padding-top: 1rem;
+        position: initial;
+        max-width: 100%;
+        padding-top: 0;
     }
 
     .secc2 {
@@ -150,7 +151,7 @@ li.ski-1 {
     }
 
     .c-1 {
-        height: 18rem;
+        height: auto;
     }
 
     .c-2 {
@@ -171,6 +172,9 @@ li.ski-1 {
     .list {
         display: flex;
         flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
     }
     
     ul.skills {
@@ -191,19 +195,34 @@ li.ski-1 {
     .all-proy {
         display: flow;
     }
-
-
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
 }
 
 .content1:hover {
     background-color: rgb(240, 210, 115, 0.3);
-    padding: 19PX;
     border-radius: 47px;
 }
 
-.content1{
+/*.content1{
     padding: 19PX;
-}
+}*/
 
 h3.emp-1:hover {
     color: aqua;
