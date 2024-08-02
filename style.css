@@ -118,13 +118,40 @@ li.ski-1 {
     margin-left: 38rem;
 }
 
+.content1:hover {
+    background-color: rgb(240, 210, 115, 0.3);
+    border-radius: 47px;
+}
+
+h3.emp-1:hover {
+    color: aqua;
+}
+
+img.cap {
+    width: 5rem;
+}
+
+.all-proy {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.i-content {
+    flex: 2;
+    margin-left: 22px;
+}
+
+.inv-pro {
+    flex: 1;
+}
+
+img.cap {
+    width: 227px;
+    border-radius: 14px
+}
 
 @media (max-width:780px){
 
-   /* .content-all {
-
-        padding: 0px;
-    }*/
     
     .caja {
         display: flex;
@@ -136,18 +163,34 @@ li.ski-1 {
     }
 
     .enlace {
+        width: 0;
         display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
     }
 
     .secc1 {
-        position: initial;
-        max-width: 100%;
-        padding-top: 0;
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
     }
 
     .secc2 {
         padding: 0rem 0rem; 
-        margin: 9rem 0rem; 
+        margin: 6rem 0rem; 
     }
 
     .c-1 {
@@ -192,9 +235,6 @@ li.ski-1 {
         margin: 3px;
     }
 
-    .all-proy {
-        display: flow;
-    }
     .texto {
         width: 100%;
     }
@@ -213,41 +253,253 @@ li.ski-1 {
         margin: 0;
         padding: 30px 10px 0 15px;
     }
+    
+    .all-proy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
 }
 
-.content1:hover {
-    background-color: rgb(240, 210, 115, 0.3);
-    border-radius: 47px;
+@media (min-width: 768px) {
+        
+    .caja {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlace {
+        width: 0;
+        display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
+    }
+
+    .secc1 {
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 6rem 0rem; 
+    }
+
+    .c-1 {
+        height: auto;
+    }
+
+    .c-2 {
+        height: 0rem;
+    }
+
+    .content1 {
+        padding: 0rem;
+        display: flex;
+
+    }
+
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
+    
+    .all-proy {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
 }
 
-/*.content1{
-    padding: 19PX;
-}*/
+@media (max-width: 1100px){
+    .caja {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
 
-h3.emp-1:hover {
-    color: aqua;
+    .enlace {
+        width: 0;
+        display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
+    }
+
+    .secc1 {
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 6rem 0rem; 
+    }
+
+    .c-1 {
+        height: auto;
+    }
+
+    .c-2 {
+        height: 0rem;
+    }
+
+    .content1 {
+        padding: 0rem;
+        display: flex;
+
+    }
+
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
+    
+    .all-proy {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
 }
-
-img.cap {
-    width: 5rem;
-}
-
-.all-proy {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.i-content {
-    flex: 2;
-    margin-left: 22px;
-}
-
-.inv-pro {
-    flex: 1;
-}
-
-img.cap {
-    width: 227px;
-    border-radius: 14px
-}
-
