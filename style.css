@@ -506,3 +506,33 @@ img.cap {
         padding-top: 20px;
     }
 }
+
+/*animacion menu hover*/
+li.enlace:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+li.enlace:hover::before {
+    transition: width 0.3s ease;
+}
+li.enlace:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 25px;
+    height: 1px;
+    background: white;
+    transition: all 0.3s ease;
+}
+li.enlace {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+ul.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
