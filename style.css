@@ -1,25 +1,50 @@
-.content-all{
+body{
+
     background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.caja {
+
+body, .grup-class {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.content-all {
     color: #FFFFFF;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 4rem;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    max-width: 1100px;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 6rem 0rem;
+}
+
+.content1 {
+
+    display: flex;
+    width: auto;
+    
 }
 
 .texto{
 
     opacity: 0.5;
     font-size: 20px;
+    width: 23rem;
+}
+
+
+ul.menu, .secc-exp {
+
+    padding-top: 4rem;
 }
 
 .redes-icon{
@@ -28,11 +53,456 @@
     width: 16px;
 }
 
-.secc1, .secc2 {
-    flex: 1;
-}
 .redes-padre {
-    max-width: 5rem;
+    max-width: 111px;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+ul.skills {
+    display: flex;
+    padding: 0px;
+}
+
+.m-6, .enlace{
+
+    list-style: none;
+
+}
+
+.m-6{
+    padding-top: 18px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a.li-in{
+
+    color: palevioletred;
+}
+
+p.titulo1{
+
+    flex: 1;
+    list-style: none;
+}
+
+.cont-primer {
+    flex: 3.7;
+    font-size: 13px;
+}
+
+li.ski-1 {
+    color: aqua;
+    list-style: none;
+    background-color: rgb(138, 43, 226, 0.5);
+    padding: 5px 16px;
+    border-radius: 46px;
+    margin-left: 6px;
+}
+
+.secc1 {
+    height: 100%;
+    display: grid;
+    position: fixed; /*hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll*/
+    max-width: 37rem;
+    
+}
+
+
+.secc2 {
+    margin-left: 38rem;
+}
+
+.content1:hover {
+    background-color: rgb(240, 210, 115, 0.3);
+    border-radius: 47px;
+    padding: 15px;
+}
+
+h3.emp-1:hover {
+    color: aqua;
+}
+
+img.cap {
+    width: 5rem;
+}
+
+.all-proy {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.i-content {
+    flex: 2;
+    margin-left: 22px;
+}
+
+.inv-pro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+img.cap {
+    width: 227px;
+    border-radius: 14px;
+    height: 120px;
+}
+
+@media (max-width:780px){
+
+    
+    .caja {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlace {
+        width: 0;
+        display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
+    }
+
+    .secc1 {
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 6rem 0rem; 
+    }
+
+    .c-1 {
+        height: auto;
+    }
+
+    .c-2 {
+        height: 0rem;
+    }
+
+    .content1 {
+        padding: 0rem;
+        display: grid;
+
+    }
+
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
+    
+    .all-proy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:1100px){
+
+    
+    .caja {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlace {
+        width: 0;
+        display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
+    }
+
+    .secc1 {
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 6rem 0rem; 
+    }
+
+    .c-1 {
+        height: auto;
+    }
+
+    .c-2 {
+        height: 0rem;
+    }
+
+    .content1 {
+        padding: 0rem;@media (max-width:780px){
+
+    
+    .caja {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlace {
+        width: 0;
+        display: none;
+        padding-top: 0;
+    }
+
+    .redes-padre {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .redes-icon {
+        padding: 10px;
+    }
+
+    .secc1 {
+    
+            position: initial;
+            max-width: 100%;
+            padding-top: 0;
+    }
+
+    h2.title {
+        margin-bottom: 4rem;
+    }
+
+    .secc2 {
+        padding: 0rem 0rem; 
+        margin: 6rem 0rem; 
+    }
+
+    .c-1 {
+        height: auto;
+    }
+
+    .c-2 {
+        height: 0rem;
+    }
+
+    .content1 {
+        padding: 0rem;
+        display: grid;
+
+    }
+
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
+    
+    .all-proy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
+}
+
+    }
+
+    .cont-primer {
+        flex: 3.7;
+        font-size: 18px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    ul.skills {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    li.ski-1 {
+        color: aqua;
+        list-style: none;
+        background-color: rgb(138, 43, 226, 0.5);
+        padding: 5px 16px;
+        border-radius: 46px;
+        margin: 3px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+    .content-all {
+        padding: 10px 30px;
+    }
+    p.des-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    h3.emp-1 {
+        margin: 0;
+        padding: 15px;
+    }
+    p.titulo1 {
+        margin: 0;
+        padding: 30px 10px 0 15px;
+    }
+    
+    .all-proy {
+        display: flex;
+    }
+
+    .i-content {
+        margin-left: 0;
+    }
+
+    .inv-pro {
+        /* flex: 1; */
+        padding-top: 20px;
+    }
 }
