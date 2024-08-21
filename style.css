@@ -510,7 +510,11 @@ img.cap {
 /*animacion menu hover*/
 li.enlace {
     position: relative;
+<<<<<<< HEAD
     padding-left: 31px; 
+=======
+    padding-left: 15px; 
+>>>>>>> 546e474281a6a623f81474a92714e7da2fabffc4
     margin-bottom: 10px;
     overflow: hidden;
     transition: padding-left 0.3s ease;
@@ -541,6 +545,7 @@ ul.menu {
     flex-direction: column;
     align-items: flex-start;
 }
+<<<<<<< HEAD
 
 li.enlace.active {
     padding-left: 60px;
@@ -551,6 +556,8 @@ li.enlace.active::before {
     width: 50px;
     
 }
+=======
+>>>>>>> 546e474281a6a623f81474a92714e7da2fabffc4
 
 
 /*
@@ -590,4 +597,8 @@ ul.menu {
     align-items: flex-start;
 }
 
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> 546e474281a6a623f81474a92714e7da2fabffc4
