@@ -152,12 +152,60 @@
                             <div class="inv-pro">
                                 <img src="img/Captura.PNG" alt="" class="cap">
                             </div>
+                        </div>
+                        <div class="all-proy">
+                            <div class="i-content">
+                                <h3 class="t-project">Inventario para tienda</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa minus, alias labore laborum corporis reiciendis assumenda ex porro placeat, quo nesciunt atque, in nihil fugit aliquid quidem. Qui, ex.</p>
+                            </div>
 
+                            <div class="inv-pro">
+                                <img src="img/Captura.PNG" alt="" class="cap">
+                            </div>
+                        </div>
+                        <div class="all-proy">
+                            <div class="i-content">
+                                <h3 class="t-project">Inventario para tienda</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa minus, alias labore laborum corporis reiciendis assumenda ex porro placeat, quo nesciunt atque, in nihil fugit aliquid quidem. Qui, ex.</p>
+                            </div>
+
+                            <div class="inv-pro">
+                                <img src="img/Captura.PNG" alt="" class="cap">
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
+    <script>
+    // Obtener todos los enlaces del menú
+    const menuItems = document.querySelectorAll('.menu li a');
+
+    // Obtener todas las secciones correspondientes
+    const sections = document.querySelectorAll('div');
+
+    // Escuchar el evento de desplazamiento (scroll)
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        // Verificar la posición de cada sección
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 2) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        // Aplicar la animación al enlace correspondiente
+        menuItems.forEach(li => {
+            li.parentElement.classList.remove('active');
+            if (li.getAttribute('href').includes(current)) {
+                li.parentElement.classList.add('active');
+            }
+        });
+    });
+</script>
     </body>
 </html>
